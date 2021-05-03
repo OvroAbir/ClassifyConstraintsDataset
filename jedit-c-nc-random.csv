@@ -1,0 +1,106 @@
+Clause Start,Clause End,Clause,Whole Start,Whole End,Whole Sentence,Class
+75174,75343,"The LEFT, RIGHT, UP and DOWN keys move the caret in the respective direction, and the
+PAGE_UP and PAGE_DOWN keys move the caret up and down one screen-full, respectively",75174,75344,"The LEFT, RIGHT, UP and DOWN keys move the caret in the respective direction, and the PAGE_UP and PAGE_DOWN keys move the caret up and down one screen-full, respectively.",C
+75345,75457,"When pressed once, the HOME key moves the caret to the first non-whitespace character of the
+current screen line",75345,75458,"When pressed once, the HOME key moves the caret to the first non-whitespace character of the current screen line.",C
+75459,75544,"Pressing it a second time moves the caret to the beginning of the current buffer
+line",75459,75545,Pressing it a second time moves the caret to the beginning of the current buffer line.,C
+75546,75612,Pressing it a third time moves the caret to the first visible line,75546,75613,Pressing it a third time moves the caret to the first visible line.,C
+75614,75798,"The END key behaves in a similar manner, going to the last non-whitespace character of the current
+screen line, the end of the current buffer line, and finally to the last visible line",75614,75799,"The END key behaves in a similar manner, going to the last non-whitespace character of the current screen line, the end of the current buffer line, and finally to the last visible line.",C
+75874,75999,"If soft wrap is enabled, a
+screen line is a section of a newline-delimited buffer line that fits within the wrap margin width",75874,76000,"If soft wrap is enabled, a screen line is a section of a newline-delimited buffer line that fits within the wrap margin width.",C
+76047,76131,"C+HOME and C+END move the caret to the beginning and end of the buffer, respectively",76047,76132,"C+HOME and C+END move the caret to the beginning and end of the buffer, respectively.",C
+76593,76620,HOME is bound to Smart Home,76592,76621, HOME is bound to Smart Home.,C
+76624,76649,END is bound to Smart End,76623,76650, END is bound to Smart End.,C
+76653,76701,S+HOME is bound to Select to Smart Home Position,76652,76702, S+HOME is bound to Select to Smart Home Position.,C
+76705,76751,S+END is bound to Select to Smart End Position,76704,76752, S+END is bound to Select to Smart End Position.,C
+77587,77689,"Dragging the mouse creates a range selection from where the mouse was pressed to where it was
+released",77570,77690, Range Selection Dragging the mouse creates a range selection from where the mouse was pressed to where it was released.,C
+77691,77821,"Holding down Shift while clicking a location in the buffer will create a selection from
+the caret position to the clicked location",77691,77822,Holding down Shift while clicking a location in the buffer will create a selection from the caret position to the clicked location.,C
+77823,77950,"Holding down Shift in addition to a caret movement key (LEFT, UP, HOME, etc) will extend a
+selection in the specified direction",77823,77951,"Holding down Shift in addition to a caret movement key (LEFT, UP, HOME, etc) will extend a selection in the specified direction.",C
+78189,78343,"Holding down
+Shift and Control while clicking a location in the buffer will create a rectangular selection
+from the caret position to the clicked location",78189,78344,Holding down Shift and Control while clicking a location in the buffer will create a rectangular selection from the caret position to the clicked location.,C
+78463,78492,In rectangular selection mode,78463,78659,"In rectangular selection mode, dragging the mouse always creates a rectangular selection, and keyboard commands that would normally create a range selection create a rectangular selection instead.",C
+78660,78717,A status bar indicator is shown when this mode is enabled,78660,78718,A status bar indicator is shown when this mode is enabled.,C
+78719,78791,It is possible to select a rectangle with zero width but non-zero height,78719,78792,It is possible to select a rectangle with zero width but non-zero height.,C
+78881,78936,"zero-width selections are shown as a
+thin vertical line",78876,78937,Such zero-width selections are shown as a thin vertical line.,C
+78938,79036,Inserting text into a rectangular selection repeats the text going down as many times as necessary,78938,79076,"Inserting text into a rectangular selection repeats the text going down as many times as necessary, and shifts the selection to the right.",C
+79315,79394,Rectangular selections can extend beyond the end of a line into â€œvirtual spaceâ€,79315,79395,Rectangular selections can extend beyond the end of a line into a virtual space.,C
+79409,79634,"if
+keyboard rectangular selection mode is on or if the Control key is being held down, clicking
+beyond the end of a line will insert the appropriate amount of whitespace in order to position the
+cursor at the clicked location",79396,79635,"Furthermore, if keyboard rectangular selection mode is on or if the Control key is being held down, clicking beyond the end of a line will insert the appropriate amount of whitespace in order to position the cursor at the clicked location.",C
+80046,80150,"Edit>More Selection>Multiple Selection (keyboard shortcut: C+\) turns multiple selection mode
+on and off",80026,80151, Multiple Selection Edit>More Selection>Multiple Selection (keyboard shortcut: C+\) turns multiple selection mode on and off.,C
+80362,80395,multiple selection mode is active,80334,80396,The status bar indicates if multiple selection mode is active; see the section called “The Status Bar”.,C
+80926,81069,"Line-based commands (such as Shift Indent Left, Shift Indent Right, and Line Comment)
+operate on each line that contains at least one selection",81012,81070,"Line-based commands (such as Shift Indent Left, Shift Indent Right, and Line Comment) operate on each line that contains at least one selection.",C
+81251,81311,Some older plugins may not support multiple selection at all,81250,81312, Some older plugins may not support multiple selection at all.,C
+81313,81427,"Edit>More Selection>Select None (shortcut: ESCAPE) deactivates the selection containing the
+caret, if there is one",81313,81428,"Edit>More Selection>Select None (shortcut: ESCAPE) deactivates the selection containing the caret, if there is one.",C
+81429,81475,Otherwise it deactivates all active selections,81429,81476,Otherwise it deactivates all active selections.,C
+81684,81763,Deactivating multiple selection mode while multiple blocks of text are selected,81678,81892,"Note Deactivating multiple selection mode while multiple blocks of text are selected will leave the selections in place, but you will not be able to add new selections until multiple selection mode is reactivated.",C
+81952,81981,text area no longer has focus,81893,82072,"Keyboard Focus When the cursor disappears, that means the text area no longer has focus, and when you type, your keystrokes are probably going somewhere else, such as a dockable.",C
+82849,83006,"In overwrite mode, which can be toggled
+by pressing INSERT, one character is deleted from in front of the caret position for every character
+that is inserted",82849,83007,"In overwrite mode, which can be toggled by pressing INSERT, one character is deleted from in front of the caret position for every character that is inserted.",C
+83545,83634,"If nothing is selected,
+they delete the character before or after the caret, respectively",83545,83635,"If nothing is selected, they delete the character before or after the caret, respectively.",C
+83636,83684,"If a selection exists, both delete the
+selection",83636,83685,"If a selection exists, both delete the selection.",C
+84294,84336,"By default, the last 100 edits is retained",84294,84337,"By default, the last 100 edits is retained;  older edits cannot be undone.",C
+84583,84633,C+LEFT and C+RIGHT move the caret a word at a time,84563,84634,Working With Words C+LEFT and C+RIGHT move the caret a word at a time.,C
+84635,84717,"Holding down Shift in addition to the
+above extends the selection a word at a time",84635,84718,Holding down Shift in addition to the above extends the selection a word at a time.,C
+84719,84782,A single word can be selected by double-clicking with the mouse,84719,84847,"A single word can be selected by double-clicking with the mouse, or using the Edit>More Selection>Select Word command (shortcut:  C+e w).",C
+84856,84954,"A selection that begins and ends on word
+boundaries can be created by double-clicking and dragging",84856,84955,A selection that begins and ends on word boundaries can be created by double-clicking and dragging.,C
+85340,85421,"If there is only one completion, it will be inserted into the buffer immediately.",85340,85583,"If there is only one completion, it will be inserted into the buffer immediately.",C
+85422,85582,"If multiple completions were found, the longest common prefix is inserted into the buffer, and a
+popup is shown below the caret position listing the completions",85422,85583,"If multiple completions were found, the longest common prefix is inserted into the buffer, and a popup is shown below the caret position listing the completions.",C
+87180,87244,An entire line can be selected by triple-clicking with the mouse,87160,87309," Working With Lines An entire line can be selected by triple-clicking with the mouse, or using the Edit>More Selection>Select Line command (shortcut: C+e l). ",C
+87318,87416,"A selection that begins and ends on line
+boundaries can be created by triple-clicking and dragging",87318,87417,A selection that begins and ends on line boundaries can be created by triple-clicking and dragging.,C
+87503,87576,"A relative
+offset can be used here, if it is prefixed by a + or a - sign.",87503,87625,"A relative offset can be used here, if it is prefixed by a + or a - sign. So for example -5 moves the caret up by 5 lines.",C
+80438,80505,Various jEdit commands behave differently with multiple selections:,80438,80505,Various jEdit commands behave differently with multiple selections.,NC
+76307,76494,"The Home and End keys If you prefer more traditional behavior for the HOME and END keys, you can reassign the respective keyboard shortcuts in the Shortcuts pane of the Utilities>Options;",76307,76494,"The Home and End keys If you prefer more traditional behavior for the HOME and END keys, you can reassign the respective keyboard shortcuts in the Shortcuts pane of the Utilities>Options;",NC
+83412,83473,see the section called â€œTabbing and Indentationâ€ for details.,83412,83473,see the section called Tabbing and Indentation for details.,NC
+84190,84266,"For example, if some text was inserted, Undo will remove it from the buffer.",84190,84266,"For example, if some text was inserted, Undo will remove it from the buffer.",NC
+86570,86707,"The default behavior of the C+LEFT, C+RIGHT, C+BACKSPACE and C+DELETE commands is to stop both at the beginning and the end of each word.",86570,86707,"The default behavior of the C+LEFT, C+RIGHT, C+BACKSPACE and C+DELETE commands is to stop both at the beginning and the end of each word.",NC
+80824,80923,"so on) behave as if each block was selected independently, and the command invoked on each in turn.",80824,80923,"Commands that filter text (such as Spaces to Tabs, Range Comment, Replace in Selection, and so on) behave as if each block was selected independently, and the command invoked on each in turn.",NC
+78054,78088,ESCAPE) deactivates the selection.,78054,78088,Edit>More Selection>Select None (shortcut: ESCAPE) deactivates the selection.,NC
+82371,82412,View - Toggle Full Screen is one example.,82371,82412,View - Toggle Full Screen is one example.,NC
+83285,83411,"When inserting text, the TAB and ENTER keys might not behave entirely like you expect because of various indentation features;",83285,83411,"When inserting text, the TAB and ENTER keys might not behave entirely like you expect because of various indentation features; see the section called “Tabbing and Indentation” for details.",NC
+83192,83284,Inserting text while there is a selection will replace the selection with the inserted text.,83192,83284,Inserting text while there is a selection will replace the selection with the inserted text.,NC
+84150,84189,C+e C+z) can restore the changes again.,84150,84189,"If you undo too many changes, Edit>Redo (shortcut: C+e C+z) can restore the changes again.",NC
+85068,85286,"C+b) locates possible completions for the word at the caret, first by looking in the current edit mode's syntax highlighting keyword list, and then in the current buffer for words that begin with the word at the caret.",85068,85286,"Edit>Complete Word (shortcut:  C+b) locates possible completions for the word at the caret, first by looking in the current edit mode's syntax highlighting keyword list, and then in the current buffer for words that begin with the word at the caret.",NC
+79637,79852,"Note Rectangular selections are implemented using character offsets, not absolute screen positions, so they might not behave as you might expect if a proportional-width font is being used or if soft wrap is enabled.",79637,79852,"Note Rectangular selections are implemented using character offsets, not absolute screen positions, so they might not behave as you might expect if a proportional-width font is being used or if soft wrap is enabled.",NC
+86292,86373,Setting this option will use all open buffers to search for possible completions.,86292,86373,Setting this option will use all open buffers to search for possible completions.,NC
+84150,84189,C+e C+z) can restore the changes again.,84150,84189,"If you undo too many changes, Edit>Redo (shortcut: C+e C+z) can restore the changes again.",NC
+82269,82370,"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",82269,82370,"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",NC
+77185,77258,Range selections are equivalent to selections in most other text editors;,77185,77258,Range selections are equivalent to selections in most other text editors; they cover text between two points in a buffer.,NC
+77092,77184,Editing Text Selecting Text A selection is a block of text marked for further manipulation.,77092,77184,Editing Text Selecting Text A selection is a block of text marked for further manipulation.,NC
+80824,80923,"so on) behave as if each block was selected independently, and the command invoked on each in turn.",80824,80923,"Commands that filter text (such as Spaces to Tabs, Range Comment, Replace in Selection, and so on) behave as if each block was selected independently, and the command invoked on each in turn.",NC
+86374,86445,"Note, this can degrade completion performance if many buffers are open.",86374,86445,"Note, this can degrade completion performance if many buffers are open.",NC
+83474,83544,The simplest way to delete text is with the BACKSPACE and DELETE keys.,83474,83544,The simplest way to delete text is with the BACKSPACE and DELETE keys.,NC
+83780,83865,section called â€œWorking With Linesâ€ and the section called â€œWorking With Paragraphsâ€.,83780,83865,section called Working With Lines and the section called Working With Paragraphs.,NC
+76840,76892,"the following, or indeed any other command or macro:",76840,76892,"The ENTER key can be bound to one of the following, or indeed any other command or macro:",NC
+76281,76306,Working With Paragraphsâ€.,76281,76306,Working With Paragraphs.,NC
+87115,87159,see the section called â€œThe Shortcuts Paneâ€.,87115,87159,see the section called The Shortcuts Panel.,NC
+86708,86922,"Normally, a word is a sequence of alphanumerics, but you can add other characters as part of what jEdit considers to be a 'word', set on a global or mode basis from Global Options - Editing - Extra Word Characters.",86708,86922,"Normally, a word is a sequence of alphanumerics, but you can add other characters as part of what jEdit considers to be a 'word', set on a global or mode basis from Global Options - Editing - Extra Word Characters.",NC
+85068,85286,"C+b) locates possible completions for the word at the caret, first by looking in the current edit mode's syntax highlighting keyword list, and then in the current buffer for words that begin with the word at the caret.",85068,85286,"Edit>Complete Word (shortcut: C+b) locates possible completions for the word at the caret, first by looking in the current edit mode's syntax highlighting keyword list, and then in the current buffer for words that begin with the word at the caret.",NC
+84020,84098,"More complicated operations, such as a search and replace, can also be undone.",84020,84098,"More complicated operations, such as a search and replace, can also be undone.",NC
+82269,82370,"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",82269,82370,"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",NC
+79119,79210,"Rectangles can be deleted, copied, pasted, and operated on using ordinary editing commands.",79119,79210,"Rectangles can be deleted, copied, pasted, and operated on using ordinary editing commands.",NC
+87139,87159,The Shortcuts Paneâ€.,87139,87159,The Shortcuts Panel.,NC
+86292,86373,Setting this option will use all open buffers to search for possible completions.,86292,86373,Setting this option will use all open buffers to search for possible completions.,NC
+86923,87114,"In addition, this behavior can be changed by remapping these keystrokes to alternative actions whose names end with (Eat Whitespace) in the Shortcuts pane of the Utilities>Options dialog box;",86923,87114,"In addition, this behavior can be changed by remapping these keystrokes to alternative actions whose names end with (Eat Whitespace) in the Shortcuts pane of the Utilities>Options dialog box; see the section called “The Shortcuts Pane”.",NC
+82269,82370,"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",82269,82370,"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",NC
+77092,77184,Editing Text Selecting Text A selection is a block of text marked for further manipulation.,77092,77184,Editing Text Selecting Text A selection is a block of text marked for further manipulation.,NC
+79853,79946,The text area font can be changed in the Text Area pane of the Utilities> Options dialog box.,79853,79946,The text area font can be changed in the Text Area pane of the Utilities> Options dialog box.,NC

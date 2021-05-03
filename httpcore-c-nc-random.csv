@@ -1,0 +1,93 @@
+Clause Start,Clause End,Clause,Whole Start,Whole End,Whole Sentence,Class
+9399,9455,A HTTP message consists of a header and an optional body,9399,9456,A HTTP message consists of a header and an optional body.,C
+9457,9555,"The message header of an HTTP request
+consists of a request line and a collection of header fields",9457,9556,The message header of an HTTP request consists of a request line and a collection of header fields.,C
+9557,9655,"The message header of an HTTP response
+consists of a status line and a collection of header fields",9557,9656,The message header of an HTTP response consists of a status line and a collection of header fields.,C
+9657,9708,"All HTTP messages must include the protocol
+version",9657,9709,All HTTP messages must include the protocol version.,C
+10085,10225,"The first line of that message includes
+the method to apply to the resource, the identifier of the resource, and the protocol version in use",10085,10226,"The first line of that message includes the method to apply to the resource, the identifier of the resource, and the protocol version in use.",C
+10721,10852,"The first line of that message consists of the protocol version followed by a numeric
+status code and its associated textual phrase",10721,10853,The first line of that message consists of the protocol version followed by a numeric status code and its associated textual phrase.,C
+11296,11381,An HTTP message can contain a number of headers describing properties of the message ,11296,11433,"An HTTP message can contain a number of headers describing properties of the message such as the content length, content type, and so on.",C
+13453,13526,HTTP headers are tokenized into individual header elements only on demand,13372,13527, stdout > c1 = a path=/ domain=localhost c2 = b path=/ c3 = c domain=localhost HTTP headers are tokenized into individual header elements only on demand.,C
+13626,13677,"parsed lazily only when
+you access their properties",13528,13678,HTTP headers received over an HTTP connection are stored internally as an array of characters and parsed lazily only when you access their properties.,C
+13938,14011,"The HTTP specification defines two entity-enclosing methods: POST and
+PUT",13938,14012,The HTTP specification defines two entity-enclosing methods: POST and PUT.,C
+14013,14071,Responses are usually expected to enclose a content entity,14013,14072,Responses are usually expected to enclose a content entity.,C
+14144,14158,204 No Content,14073,14206,"There are exceptions to this rule such as responses to HEAD method and 204 No Content, 304 Not Modified, 205 Reset Content responses.",C
+14160,14176,304 Not Modified,14073,14206,"There are exceptions to this rule such as responses to HEAD method and 204 No Content, 304 Not Modified, 205 Reset Content responses.",C
+14178,14195,205 Reset Content,14073,14206,"There are exceptions to this rule such as responses to HEAD method and 204 No Content, 304 Not Modified, 205 Reset Content responses.",C
+14457,14503,"Streamed entities are generally not
+repeatable",14457,14504,Streamed entities are generally not repeatable.,C
+14625,14673,Self-contained entities are generally repeatable,14625,14674,Self-contained entities are generally repeatable.,C
+14840,14890,"This is only possible with
+self-contained entities",14840,14930,This is only possible with self-contained entities (like ByteArrayEntity or StringEntity).,C
+14966,15023,an entity can represent both binary and character content,14960,15090,"Since an entity can represent both binary and character content, it has support for character encodings (to support the latter, i.e. character content).",C
+15131,15234,The entity is created when executing a request with enclosed content or when the request was successful,15131,15303,The entity is created when executing a request with enclosed content or when the request was successful and the response body is used to send the result back to the client.,C
+16443,16464,"if they are
+available",16204,16466,"When the entity has been received with an incoming message, the methods HttpEntity#getContentType() and HttpEntity#getContentLength() methods can be used for reading the common metadata such as Content-Type and Content-Length headers (if they are available).",C
+16657,16752,"If the headers aren't available, a length of -1 will be returned, and NULL for the content
+type",16657,16753,"If the headers aren't available, a length of -1 will be returned, and NULL for the content type.",C
+16657,16721,"If the headers aren't available, a length of -1 will be returned",16657,16753,"If the headers aren't available, a length of -1 will be returned, and NULL for the content type.",C
+16754,16827,"If the Content-Type header is available, a Header object will be returned",16754,16828,"If the Content-Type header is available, a Header object will be returned.",C
+17405,17465,"one must close the content stream associated
+with the entity",17351,17466,In order to ensure proper release of system resources one must close the content stream associated with the entity.,C
+18395,18424,"has a negative
+content length",18345,18425,"After construction, it represents no content, and has a negative content length.",C
+18831,18848,repeatable entity,18794,18898,"ByteArrayEntity is a self-contained, repeatable entity that obtains its content from a given byte array.",C
+18854,18897,obtains its content from a given byte array,18794,18898,"ByteArrayEntity is a self-contained, repeatable entity that obtains its content from a given byte array.",C
+19093,19110,repeatable entity,19072,19148,"StringEntity is a self-contained, repeatable entity that obtains its content from a java.",C
+19116,19166,"obtains its content from a java.lang.String
+object",19072,19167,"StringEntity is a self-contained, repeatable entity that obtains its content from a java.lang.String object.",C
+20138,20159,non-repeatable entity,20105,20206,"InputStreamEntity is a streamed, non-repeatable entity that obtains its content from an input stream.",C
+20160,20205,that obtains its content from an input stream,20105,20206,"InputStreamEntity is a streamed, non-repeatable entity that obtains its content from an input stream.",C
+20208,20273,Construct it by supplying the input stream and the content length,20207,20274,Construct it by supplying the input stream and the content length.,C
+20361,20459,"If the length matches the content length available
+on the input stream, then all data will be sent",20361,20460,"If the length matches the content length available on the input stream, then all data will be sent.",C
+20476,20543,"a negative content length will read all data
+from the input stream,",20461,20655,"Alternatively, a negative content length will read all data from the input stream, which is the same as supplying the exact content length, so use the length to limit the amount of data to read.",C
+20821,20838,repeatable entity,20789,20876,"FileEntity is a self-contained, repeatable entity that obtains its content from a file.",C
+20942,20989,you need to supply the content type of the file,20877,21096,"Use this mostly to stream large files of different types, where you need to supply the content type of the file, for instance, sending a zip file would require the content type application/zip, for XML application/xml.",C
+21802,21846,"If the supplied entity
+is already repeatable",21802,21904,"If the supplied entity is already repeatable, it simply passes calls through to the underlying entity.",C
+9768,9967,"HttpCore defines the HTTP message object model to follow this definition closely, and provides extensive support for serialization (formatting) and deserialization (parsing) of HTTP message elements.",9768,9967,"HttpCore defines the HTTP message object model to follow this definition closely, and provides extensive support for serialization (formatting) and deserialization (parsing) of HTTP message elements.",NC
+10948,10998,System.out.println(response.getProtocolVersion());,10948,10998,System.out.println(response.getProtocolVersion());,NC
+21276,21364,The wrapping entity holds a reference to a wrapped entity and delegates all calls to it.,21276,21364,The wrapping entity holds a reference to a wrapped entity and delegates all calls to it.,NC
+21098,21193,"HttpEntity entity = new FileEntity(staticFile, ContentType.create(""application/java-archive""));",21098,21193,"HttpEntity entity = new FileEntity(staticFile, ContentType.create(""application/java-archive""));",NC
+10002,10084,HTTP request message HTTP request is a message sent from the client to the server.,10002,10084,HTTP request message HTTP request is a message sent from the client to the server.,NC
+15616,15729,Please note that some non-streaming (self-contained) entities may be unable to represent their content as a java.,15616,15729,Please note that some non-streaming (self-contained) entities may be unable to represent their content as a java.,NC
+21530,21584,BufferedHttpEntity is a subclass of HttpEntityWrapper.,21530,21584,BufferedHttpEntity is a subclass of HttpEntityWrapper.,NC
+11224,11246,OK HTTP/1.1 200 OK 1.,11224,11246,HTTP/1.1 200 OK.,NC
+21627,21699,"It reads the content from the supplied entity, and buffers it in memory.",21627,21699,"It reads the content from the supplied entity, and buffers it in memory.",NC
+18238,18306,"In general, use this class for entities received from HTTP messages.",18238,18306,"In general, use this class for entities received from HTTP messages.",NC
+13180,13241,"System.out.println(elem.getName() + "" = "" + elem.getValue());",13180,13241,"System.out.println(elem.getName() + "" = "" + elem.getValue());",NC
+18158,18237,"Exactly as the name implies, this basic entity represents an underlying stream.",18158,18237,"Exactly as the name implies, this basic entity represents an underlying stream.",NC
+18307,18344,This entity has an empty constructor.,18307,18344,This entity has an empty constructor.,NC
+18672,18709,myEntity.setContent(someInputStream);,18672,18709,myEntity.setContent(someInputStream);,NC
+21365,21520,Implementations of wrapping entities can derive from this class and need to override only those methods that should not be delegated to the wrapped entity.,21365,21520,Implementations of wrapping entities can derive from this class and need to override only those methods that should not be delegated to the wrapped entity.,NC
+17491,17520,HttpEntity entity = response.,17491,17520,HttpEntity entity = response.,NC
+15925,16043,The EntityUtils class exposes several static methods to simplify extracting the content or information from an entity.,15925,16043,The EntityUtils class exposes several static methods to simplify extracting the content or information from an entity.,NC
+15616,15729,Please note that some non-streaming (self-contained) entities may be unable to represent their content as a java.,15616,15729,Please note that some non-streaming (self-contained) entities may be unable to represent their content as a java.,NC
+14763,14839,"An entity can be repeatable, meaning its content can be read more than once.",14763,14839,"An entity can be repeatable, meaning its content can be read more than once.",NC
+10855,10934,"HttpResponse response = new BasicHttpResponse(HttpVersion.HTTP 1 1, HttpStatus.",10855,10934,"HttpResponse response = new BasicHttpResponse(HttpVersion.HTTP_1_1, HttpStatus.SC_OK, ""OK"")",NC
+16044,16203,"Instead of reading the java.io.InputStream directly, one can retrieve the complete content body in a string or byte array by using the methods from this class.",16044,16203,"Instead of reading the java.io.InputStream directly, one can retrieve the complete content body in a string or byte array by using the methods from this class.",NC
+10228,10295,"HttpRequest request = new BasicHttpRequest(""GET"", ""/"", HttpVersion.",10228,10295,"HttpRequest request = new BasicHttpRequest(""GET"", ""/"", HttpVersion.",NC
+21585,21626,Construct it by supplying another entity.,21585,21626,Construct it by supplying another entity.,NC
+21585,21626,Construct it by supplying another entity.,21585,21626,Construct it by supplying another entity.,NC
+21222,21275,This is the base class for creating wrapped entities.,21222,21275,This is the base class for creating wrapped entities.,NC
+12937,12976,"response.addHeader(""Set-Cookie"", ""c2=b;",12937,12976,"response.addHeader(""Set-Cookie"", ""c2=b; path=\""/\"", c3=c; domain=\""localhost\"""");",NC
+18672,18709,myEntity.setContent(someInputStream);,18672,18709,myEntity.setContent(someInputStream);,NC
+17066,17094,System.out.println(myEntity.,17066,17094,System.out.println(myEntity.getContentLength());,NC
+11833,11882,"Header h2 = response.getLastHeader(""Set-Cookie"");",11833,11882,"Header h2 = response.getLastHeader(""Set-Cookie"");",NC
+13699,13780,HTTP messages can carry a content entity associated with the request or response.,13699,13780,HTTP messages can carry a content entity associated with the request or response.,NC
+15757,15924,It is legal for such entities to implement HttpEntity#writeTo(OutputStream) method only and to throw UnsupportedOperationException from HttpEntity#getContent() method.,15757,15924,It is legal for such entities to implement HttpEntity#writeTo(OutputStream) method only and to throw UnsupportedOperationException from HttpEntity#getContent() method.,NC
+14312,14375,"The content is received from a stream, or generated on the fly.",14312,14375,"The content is received from a stream, or generated on the fly.",NC
+0,0,There is an efficient way to obtain all headers of a given type using the  HeaderIterator interface.,0,0,There is an efficient way to obtain all headers of a given type using the  HeaderIterator interface.,NC
+0,0,It also provides convenience methods to parse HTTP messages into individual header elements.,0,0,It also provides convenience methods to parse HTTP messages into individual header elements.,NC
+0,0,"Entities can be found in some requests and in some responses, as they are optional. ",0,0,"Entities can be found in some requests and in some responses, as they are optional. ",NC
+0,0,"HttpCore distinguishes three kinds of entities, depending on where their content originates:",0,0,"HttpCore distinguishes three kinds of entities, depending on where their content originates:",NC
+0,0,"Since an entity can represent both binary and character content, it has support for character encodings (to support the latter, i.e. character content).",0,0,"Since an entity can represent both binary and character content, it has support for character encodings (to support the latter, i.e. character content).",NC
+0,0,Please note that some non-streaming (self-contained) entities may be unable to represent their content as a java.io.InputStream efficiently.,0,0,Please note that some non-streaming (self-contained) entities may be unable to represent their content as a java.io.InputStream efficiently.,NC

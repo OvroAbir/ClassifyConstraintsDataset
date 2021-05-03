@@ -1,0 +1,162 @@
+Clause Start,Clause End,Clause,Whole Start,Whole End,Whole Sentence,Class
+12906,12941,Java Virtual Machine 1.8 or greater,12802,12942,SWARM is platform independent (will run on any operating system) but requires a graphical display and a Java Virtual Machine 1.8 or greater.,C
+13256,13295,"Minimum screen resolution of 1280
+x 960",13256,13316,Minimum screen resolution of 1280 x 960 is also recommended.,C
+14434,14461,waveform or helicorder data,14346,14462,"The Data Source Chooser, the top half of the panel, is used to select the source of the waveform or helicorder data.",C
+14658,14706,"a channel, either
+the waveform or the helicorder",14588,14707,"The Channel Selector, the bottom half of the panel, is used to select a channel, either the waveform or the helicorder.",C
+16746,16870,"Currently supported
+data source types for SWARM are Winston Wave Server, Earthworm Wave Server, FDSN WS, and
+SeekLink Server",16746,16871,"Currently supported data source types for SWARM are Winston Wave Server, Earthworm Wave Server, FDSN WS, and SeekLink Server.",C
+17072,17196,"Connection to Winston requires
+the IP address or host name of the server, port number, and communication time out in seconds",17072,17197,"Connection to Winston requires the IP address or host name of the server, port number, and communication time out in seconds.",C
+17452,17578,"Connection
+to Earthworm requires the IP address or host name of the server, port number, and communication
+time out in seconds",17452,17579,"Connection to Earthworm requires the IP address or host name of the server, port number, and communication time out in seconds.",C
+17580,17622,Earthworm data provides raw wave data only,17580,17623,Earthworm data provides raw wave data only.,C
+17910,17940,"RESTful web service
+interfaces",17837,17965,International Federation of Digital Seismograph Networks (FDSN) provides RESTful web service interfaces for accessing wave data.,C
+18051,18130,"To add an FDSN web service data source, enter in the dataselect and station URL",18051,18131,"To add an FDSN web service data source, enter in the dataselect and station URL.",C
+18599,18669,SeedLink protocol transmits data packets in 512-byte Mini-SEED records,18599,18670,SeedLink protocol transmits data packets in 512-byte Mini-SEED records.,C
+18867,18949,"To connect to a SeedLink server
+enter in the IP address or host name, and the port",18867,18950,"To connect to a SeedLink server enter in the IP address or host name, and the port.",C
+19009,19053,Swarm can open waveform data stored in files,19009,19090,Swarm can open waveform data stored in files through the File -> Open File... menu.,C
+19091,19181,"Supported read
+formats are SAC, SEED, miniSEED, SEISAN, Matlab-readable text file, and WIN",19091,19182,"Supported read formats are SAC, SEED, miniSEED, SEISAN, Matlab-readable text file, and WIN.",C
+19537,19615,"name the files with the SCNL information separated by space or underscore (_),",19530,19618,"Simply name the files with the SCNL information separated by space or underscore (_), e.g. MLLR_EHE.txt, MEV SHN OP.txt, etc.",C
+19656,19715,The content of Matlab-readable text file is space delimited,19656,19777,The content of Matlab-readable text file is space delimited with the epoch time in milliseconds followed by the value.,C
+20164,20229,"By default,
+the file open dialog will filter on .config extension",20164,20301,"By default, the file open dialog will filter on .config extension but the configuration file can be called anything and located anywhere.",C
+20302,20355,The first line of the file must contain the time zone,20302,20408,"The first line of the file must contain the time zone, followed by the name for each channel in the files.",C
+20409,20469,If specified time zone is not valid it will default to ‘GMT’,20409,20470,If specified time zone is not valid it will default to 'GMT'.,C
+20471,20546,"If configuration file is not
+available or readable it will default to ‘UTC’",20471,20547,If configuration file is not available or readable it will default to 'UTC'.,C
+21585,21623,Only Integer (3) encoding is supported,21585,21624,Only Integer (3) encoding is supported.,C
+22230,22356,"The status bar at the bottom will display information about the wave when in Wave, Spectra, or
+Spectrogram view in inset panel",22230,22357,"The status bar at the bottom will display information about the wave when in Wave, Spectra, or Spectrogram view in inset panel.",C
+22456,22473,Start time in UTC,22455,22707,"Start time in UTC , End time in UTC, Number of samples (duration in seconds), Sample rate, Minimum amplitude (does not account for bias), Maximum amplitude (does not account for bias), RSAM value (does not account for bias).",C
+22721,22873,"If the panel is in time series view (Wave and Spectrogram), it will display the time on the x-axis that the
+mouse is hovering over in local and UTC time",22708,22874," Second Line If the panel is in time series view (Wave and Spectrogram), it will display the time on the x-axis that the mouse is hovering over in local and UTC time.",C
+22903,22931,Y-axis value if in Wave view,22902,22932, Y-axis value if in Wave view;,C
+22943,22978,Frequency and Power in Spectra view,22942,22979,Frequency and Power in Spectra view;,C
+22990,23019,Frequency in Spectrogram view,22989,23020,Frequency in Spectrogram view;,C
+23122,23240,"Hovering over an icon will also
+provide a tooltip indicating the function of the button and the hot keys, if available",23122,23241,"Hovering over an icon will also provide a tooltip indicating the function of the button and the hot keys, if available.",C
+24374,24395,Default is 15 minutes,24374,24396,Default is 15 minutes.,C
+24460,24479,Default is 12 hours,24459,24480,Default is 12 hours.,C
+24564,24597,"Default is ‘Now’, or current time",24564,24598,"Default is 'Now', or current time.",C
+24599,24704,"The format for specifying the bottom view time is
+YYYYMMDD or, if more resolution is needed,
+YYMMDDHHMMSS",24599,24705,"The format for specifying the bottom view time is YYYYMMDD or, if more resolution is needed, YYMMDDHHMMSS.",C
+24724,24770,"Zoom determines the amount of time, in seconds",24717,24816,"Zoom Zoom determines the amount of time, in seconds, on either side of the mouse cursor to zoom.",C
+24946,25016,Show clip will display the data in red when clip threshold is exceeded,24945,25017,Show clip will display the data in red when clip threshold is exceeded.,C
+25022,25090,Audible clipping enables audio alarm when clip threshold is exceeded,25021,25091,Audible clipping enables audio alarm when clip threshold is exceeded.,C
+25096,25156,Alert frequency sets the frequency of audio alarm in minutes,25095,25157,Alert frequency sets the frequency of audio alarm in minutes.,C
+25274,25297,The default value is 15,25274,25298,The default value is 15.,C
+25741,25794,Auto-scale toggles helicorder auto-scaling on and off,25740,25795,Auto-scale toggles helicorder auto-scaling on and off.,C
+26325,26419,Clip threshold allow user to set a counts threshold after which the trace will be shown in red,26324,26420,Clip threshold allow user to set a counts threshold after which the trace will be shown in red.,C
+26721,26814,"There are four wave view types:
+standard wave view, spectra, spectrogram, and particle motion",26721,26815,"There are four wave view types: standard wave view, spectra, spectrogram, and particle motion.",C
+27323,27382,"Options are Wave, Spectra, Spectrogram,
+or Particle Motion.",27323,27387,"Options are Wave, Spectra, Spectrogram, or Particle Motion. 5.",C
+27754,27915,"When in Helicorder View, if Duration Magnitude option is enabled (see Options under File menu)
+users can left click on the wave panel to create two green markers",27754,27916,"When in Helicorder View, if Duration Magnitude option is enabled (see Options under File menu) users can left click on the wave panel to create two green markers.",C
+28044,28164,"If the wave panel is subsequently copied to the Clipboard, the duration markers become Coda markers
+for use in Pick Mode",28043,28165,"If the wave panel is subsequently copied to the Clipboard, the duration markers become Coda markers for use in Pick Mode.",C
+28897,28917,"Traditional (Z N E),",28896,29021,"Traditional (Z N E), triaxial (A B C), non-traditional orthogonal (1 2 3), and optional component (U V W) orientation codes.",C
+29587,29645,Auto scale will scale the y-axis automatically if selected,29586,29646,Auto scale will scale the y-axis automatically if selected.,C
+29766,29877,"Manual scale, if selected, will set the y-axis to the user specified Min. Amplitude and Max.
+Amplitude settings",29765,29878,"Manual scale, if selected, will set the y-axis to the user specified Min. Amplitude and Max. Amplitude settings.",C
+29883,30021,"Persistent rescale, if unchecked, will rescale the x and y axis to use the whole screen based on
+the current max amplitude being displayed",29882,30022,"Persistent rescale, if unchecked, will rescale the x and y axis to use the whole screen based on the current max amplitude being displayed.",C
+30027,30085,Remove bias will remove the mean value from the wave if on,30026,30086,Remove bias will remove the mean value from the wave if on.,C
+30087,30111,It is enabled by default,30087,30112,It is enabled by default.,C
+30115,30253,"
+
+Use calibrations, if enabled, will use conversion factor information available from the data
+source to convert the data to real velocity",30116,30254,"Use calibrations, if enabled, will use conversion factor information available from the data source to convert the data to real velocity.",C
+30381,30486,"SWARM will allow the maximum frequency
+to be set to any positive value greater than the minimum frequency",30375,30599,"While SWARM will allow the maximum frequency to be set to any positive value greater than the minimum frequency, this value will adjust automatically if it is greater than the Nyquist frequency of the wave being manipulated.",C
+30604,30670,"Log frequency, if checked, will set the frequency axis to log mode",30603,30671,"Log frequency, if checked, will set the frequency axis to log mode.",C
+30676,30734,"Log Power, if checked, will set the power axis to log mode",30675,30735,"Log Power, if checked, will set the power axis to log mode.",C
+30905,30997,"If log power is enabled, the
+values here should be the log power range (i.e. the x in 10^x).",30905,31001,"If log power is enabled, the values here should be the log power range (i.e. the x in 10^x). 5.",C
+31128,31233,"SWARM will allow the maximum frequency
+to be set to any positive value greater than the minimum frequency",31122,31346,"While SWARM will allow the maximum frequency to be set to any positive value greater than the minimum frequency, this value will adjust automatically if it is greater than the Nyquist frequency of the wave being manipulated.",C
+31351,31410,"Log Power, if checked, will set the power scale to log mode",31350,31411,"Log Power, if checked, will set the power scale to log mode.",C
+31515,31566,Power range to use if manual scale power is enabled,31514,31567,Power range to use if manual scale power is enabled.,C
+31568,31661,"This determines the minimum and
+maximum to use on the color scale if power is scaled manually",31568,31662,This determines the minimum and maximum to use on the color scale if power is scaled manually.,C
+32179,32212,"Legal values are between 0
+and 95",32179,32213,Legal values are between 0 and 95.,C
+32365,32424,Enabled checkbox will turn Butterworth filtering on and off,32364,32425,Enabled checkbox will turn Butterworth filtering on and off.,C
+32430,32508,Low pass filter removes signal above corner frequency (Max. frequency) setting,32429,32509,Low pass filter removes signal above corner frequency (Max. frequency) setting.,C
+32514,32594,High pass filter removes signals below corner frequency (Min. frequency) setting,32513,32595,High pass filter removes signals below corner frequency (Min. frequency) setting.,C
+32600,32682,Band pass filter removes signals above Max. frequency or lower than Min. frequency,32599,32683,Band pass filter removes signals above Max. frequency or lower than Min. frequency.,C
+33002,33089,"Order slider bar sets the order of the filter as even values between 2 and 8, inclusive",33001,33090,"Order slider bar sets the order of the filter as even values between 2 and 8, inclusive.",C
+34028,34146,"Hovering over an icon will also provide a
+tooltip indicating the function of the button and the hot keys, if available",34028,34147,"Hovering over an icon will also provide a tooltip indicating the function of the button and the hot keys, if available.",C
+25883,25988,"If this fails, or if more control over the appearance of the helicorder is wanted, set the One bar range.",25883,25988,"If this fails, or if more control over the appearance of the helicorder is wanted, set the One bar range.",NC
+21343,21434,This will automatically assign WIN to other unknown file types being opened simultaneously.,21343,21434,This will automatically assign WIN to other unknown file types being opened simultaneously.,NC
+17770,17815,Figure 4 Adding new Earthworm data source 3.,17770,17815,Figure 4 Adding new Earthworm data source 3.,NC
+24040,24133,manipulating the helicorder view itself or zooming in and looking at the underlying waveform.,24040,24133,There are two main ways in which the user can interact with the a helicorder view: manipulating the helicorder view itself or zooming in and looking at the underlying waveform.,NC
+16298,16449,"s possible to select a channel (or channels, with CTRL- or Shift-click on Windows) and press one of the five buttons at the bottom of the data chooser:",16298,16449,"Alternatively, it�s possible to select a channel (or channels, with CTRL- or Shift-click on Windows) and press one of the five buttons at the bottom of the data chooser:",NC
+17002,17071,It can be obtained from https://volcanoes.usgs.gov/software/winston/.,17002,17071,It can be obtained from https://volcanoes.usgs.gov/software/winston/.,NC
+28690,28767,The plot begins as red at start time and gradually turns to blue at end time.,28690,28767,The plot begins as red at start time and gradually turns to blue at end time.,NC
+27113,27201,The settings can be edited by clicking on the wave view settings icon or pressing the ?,27113,27201,The settings can be edited by clicking on the wave view settings icon or pressing the ? Key.,NC
+19464,19529,Swarm will attempt to obtain SCNL information using the filename.,19464,19529,Swarm will attempt to obtain SCNL information using the filename.,NC
+18393,18536,"The Gulp size setting determines how much past data to retrieve at a time, and Gulp delay determines how much time between past data retrieval.",18393,18536,"The Gulp size setting determines how much past data to retrieve at a time, and Gulp delay determines how much time between past data retrieval.",NC
+20671,20786,See https://docs.oracle.com/cd/B13866 04/webconf.904/b10877/timezone.htm for a list of time zones that can be used.,20671,20786,See https://docs.oracle.com/cd/B13866 04/webconf.904/b10877/timezone.htm for a list of time zones that can be used.,NC
+28768,28842,The gray number next to each plot indicates the limit of the x and y axis.,28768,28842,The gray number next to each plot indicates the limit of the x and y axis.,NC
+27472,27506,"To apply rescale, press the R key.",27472,27506,"To apply rescale, press the R key.",NC
+22032,22133,Clicking on the helicorder opens a wave panel for a magnified view of the area highlighted in yellow.,22032,22133,Clicking on the helicorder opens a wave panel for a magnified view of the area highlighted in yellow.,NC
+15581,15658,"To get it back, type CTRL-D or go to the Window menu and select Data Chooser.",15581,15658,"To get it back, type CTRL-D or go to the Window menu and select Data Chooser.",NC
+21529,21568,Figure 7 File type selection dialog 3.,21529,21568,Figure 7 File type selection dialog 3.,NC
+26545,26630,"The new settings are applied on next helicorder update, which may be several seconds.",26545,26630,"The new settings are applied on next helicorder update, which may be several seconds.",NC
+13743,13890,"If nothing happens, you can run the application from a command (or DOS) prompt to see if there are any errors that can be used for troubleshooting.",13743,13890,"If nothing happens, you can run the application from a command (or DOS) prompt to see if there are any errors that can be used for troubleshooting.",NC
+26856,26912,there are settings associated with that individual view.,26856,26912,Any time a wave view is seen in SWARM there are settings associated with that individual view.,NC
+21758,21842,The helicorder below is displaying channel PN7A SHZ AV from AVO Winston data source.,21758,21842,The helicorder below is displaying channel PN7A SHZ AV from AVO Winston data source.,NC
+33832,33917,The panel shaded blue is the selected wave for the purposes of the clipboard toolbar.,33832,33917,The panel shaded blue is the selected wave for the purposes of the clipboard toolbar.,NC
+21011,21027,"IJEN, component:",21011,21027,"The first channel will be mapped to IJEN EHZ ID (Station: IJEN, component: EHZ, and network: ID).",NC
+21985,22013,Figure 8 Helicorder view 4.,21985,22013,Figure 8 Helicorder view 4.,NC
+21078,21152,If channel names are not provided it will use channel numbers as names (e.,21078,21152,"If channel names are not provided it will use channel numbers as names (e.g. 0, 1, 2, etc.)",NC
+26662,26720,Wave views are one of the fundamental data views in SWARM.,26662,26720,Wave views are one of the fundamental data views in SWARM.,NC
+13658,13742,"On Windows, double clicking on swarm console.bat will open the SWARM user interface.",13658,13742,"On Windows, double clicking on swarm console.bat will open the SWARM user interface.",NC
+20832,20952,"Asia/Tokyo IJEN EHZ ID RAUN EHZ ID In the above example, Tokyo’s time zone will be used when determining the wave times.",20832,20952,"In the above example, Tokyo�s time zone will be used when determining the wave times.",NC
+13104,13255,"The less memory and processing speed the computer has, the more likely that SWARM’s performance is affected when pulling and analyzing large data sets.",13104,13255,"The less memory and processing speed the computer has, the more likely that SWARM's performance is affected when pulling and analyzing large data sets.",NC
+13534,13602,"In Windows, your unzipped swarm-x.y.z directory will look like this:",13534,13602,"In Windows, your unzipped swarm-x.y.z directory will look like this:",NC
+16223,16279,Double clicking on a channel will bring up a helicorder.,16223,16279,Double clicking on a channel will bring up a helicorder.,NC
+33636,33765,a wave by left clicking and dragging over the portion to zoom in on (the transparent yellow block is showing the act of zooming).,33636,33765,It�s also possible to zoom into any portion of a wave by left clicking and dragging over the portion to zoom in on (the transparent yellow block is showing the act of zooming).,NC
+18953,18999,Figure 6 Adding a new SeedLink data source 3.,18953,18999,Figure 6 Adding a new SeedLink data source 3.,NC
+17200,17243,Figure 3 Adding new Winston data source 3.,17200,17243,Figure 3 Adding new Winston data source 3.,NC
+33920,33948,Figure 15 Wave Clipboard 6.,33920,33948,Figure 15 Wave Clipboard 6.,NC
+28352,28385,"To apply filter, press the F key.",28352,28385,"To apply filter, press the F key.",NC
+29195,29346,"Some wave data, such as those imported from Matlab-readable text files, may not have the required station and channel information to perform this plot.",29195,29346,"Some wave data, such as those imported from Matlab-readable text files, may not have the required station and channel information to perform this plot.",NC
+19621,19646,"MLLR EHE.txt, MEV SHN OP.",19621,19646,"Simply name the files with the SCNL information separated by space or underscore (_), e.g. MLLR_EHE.txt, MEV SHN OP.txt, etc",NC
+21435,21526,It will also use the WIN configuration selected for the first file on all subsequent files.,21435,21526,It will also use the WIN configuration selected for the first file on all subsequent files.,NC
+26076,26271,"For example, if there is a seismometer that reports counts between -3600 and 3600 and a bar range of 1200 is selected, a full-range waveform will take 3 bars, overlapping one above and one below.",26076,26271,"For example, if there is a seismometer that reports counts between -3600 and 3600 and a bar range of 1200 is selected, a full-range waveform will take 3 bars, overlapping one above and one below.",NC
+28388,28418,Figure 13 Spectrogram view 5.,28388,28418,Figure 13 Spectrogram view 5.,NC
+18799,18820,can be found at http:,18799,18820,More information on SeedLink and IRIS DMC�s server can be found at http://ds.iris.edu/ds/nodes/dmc/services/seedlink/. ,NC
+24134,24275,All the settings for the helicorder view can be manipulated in the helicorder view settings dialog which can be opened by clicking on the 4.,24134,24275,All the settings for the helicorder view can be manipulated in the helicorder view settings dialog which can be opened by clicking on the button.,NC
+31887,31997,Increasing the number of samples increases the vertical resolution while decreasing the horizontal resolution.,31887,31997,Increasing the number of samples increases the vertical resolution while decreasing the horizontal resolution.,NC
+15256,15426,"To remove an existing data source, select the data source to delete and click on ‘Remove data source’ icon clicking on it and selecting the ‘Refresh data source’ icon .",15256,15426,"To remove an existing data source, select the data source to delete and click on 'Remove data source' icon clicking on it and selecting the 'Refresh data source' icon .",NC
+21171,21342,"Since there usually many WIN files associated with a wave, it is advised that the ‘Assume all unknown files are of this type’ option when prompted for file type selection.",21171,21342,"Since there usually many WIN files associated with a wave, it is advised that the 'Assume all unknown files are of this type' option when prompted for file type selection.",NC
+33261,33441,"This allows users, for example, to compare arrival times across many stations, look at the same waveform with three different filters, or compare different events from one station.",33261,33441,"This allows users, for example, to compare arrival times across many stations, look at the same waveform with three different filters, or compare different events from one station.",NC
+14252,14345,"line in the center, either by dragging with the mouse or clicking on one of the small arrows.",14252,14345,"It�s possible to adjust the size of the two panels by adjusting the split line in the center, either by dragging with the mouse or clicking on one of the small arrows.",NC
+16899,17001,Winston is a Java-based seismic wave server developed by USGS that provides data and plots to clients.,16899,17001,Winston is a Java-based seismic wave server developed by USGS that provides data and plots to clients.,NC
+27438,27471,"To apply filter, press the F key.",27438,27471,"To apply filter, press the F key.",NC
+19976,20050,The Japanese WIN format does not contain station or time zone information.,19976,20050,The Japanese WIN format does not contain station or time zone information.,NC
+19281,19463,"While the station information is not strictly necessary to display the data in helicorder and most other views, it may be required in some cases, such as in the particle motion view.",19281,19463,"While the station information is not strictly necessary to display the data in helicorder and most other views, it may be required in some cases, such as in the particle motion view.",NC
+25516,25625,This effectively eliminates all drift and is useful for broadband stations with lots of low frequency energy.,25516,25625,This effectively eliminates all drift and is useful for broadband stations with lots of low frequency energy.,NC
+14041,14123,"After starting SWARM, a panel will be visible on the left side of the main screen.",14041,14123,"After starting SWARM, a panel will be visible on the left side of the main screen.",NC
+13432,13477,"To install SWARM, unzip the download swarn-x.",13432,13477,"To install SWARM, unzip the download swarn-x.",NC
+30335,30374,frequency specifies the x-axis maximum.,30335,30374,frequency specifies the x-axis maximum.,NC
+13605,13642,Figure 1 Swarm Directory Contents 2.,13605,13642,Figure 1 Swarm Directory Contents 2.,NC
+0,0,0,0,0,Below are the functions available in the toolbar above the helicorder.,NC
+0,0,0,0,0,X is the number of minutes to display along the bottom of the helicorder.,NC
+0,0,0,0,0,Y is the total time in hours to display on the helicorder.,NC
+0,0,0,0,0,Also available is a button to display the Wave View Settings Dialog.,NC
+0,0,0,0,0,Refresh is the number of seconds between attempts to refresh the helicorder with the latest data. ,NC
+0,0,0,0,0,Auto-scale toggles helicorder auto-scaling on and off. ,NC
+0,0,0,0,0,This is best understood through experimentation.,NC
+0,0,0,0,0,"The new settings are applied on next helicorder update, which may be several seconds.",NC

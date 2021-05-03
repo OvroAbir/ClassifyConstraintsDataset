@@ -1,0 +1,46 @@
+Clause Start,Clause End,Clause,Whole Start,Whole End,Whole Sentence,Class
+370581,370651,The Element metaclass defines a tagged value documentation for comment,370581,370719,"The Element metaclass defines a tagged value documentation for comment, description or explanation of the element to which it is attached.",C
+370731,370774,tagged value applies to every model element,370720,370869,"Since this tagged value applies to every model element, it is given its own tab in the details pane, rather than being part of the Tagged Values tab.",C
+371655,371695,whether this model element is deprecated,371631,371699,A check box to indicate whether this model element is deprecated (i. e. planned for removal in future versions of the design model).,C
+371772,371816,Pointers to documentation outside the system,371772,371817,Pointers to documentation outside the system.,C
+371861,371894,Literal text of any documentation,371861,371895,Literal text of any documentation.,C
+372391,372552,"Model elements that do not have any specific direct graphical representation on the screen (beyond their
+textual description) do not have style tabs of their own",372391,372553,Model elements that do not have any specific direct graphical representation on the screen (beyond their textual description) do not have style tabs of their own.,C
+373027,373115,This checkbox allow to display or hide the path in front of the name of the modelelement,373021,373116,Path This checkbox allow to display or hide the path in front of the name of the modelelement.,C
+373260,373334,This checkbox allows to hide or show the attributes compartment of a class,373248,373335,Attributes This checkbox allows to hide or show the attributes compartment of a class.,C
+373350,373437,This checkbox allows to hide or show the operations compartment of a class or interface,373339,373438,Operation This checkbox allows to hide or show the operations compartment of a class or interface.,C
+373454,373521,This checkbox allows to reveal or hide the stereotypes of a package,373442,373568,"Stereotype This checkbox allows to reveal or hide the stereotypes of a package, shown above the name.",C
+373583,373639,This checkbox allows to hide the visibility of a package,373571,373640,Visibility This checkbox allows to hide the visibility of a package.,C
+373641,373696,"The visibility is shown in
+UML notation as +, -, # or ~",373641,373697,"The visibility is shown in UML notation as +, -, # or ~.",C
+373719,373804,"This checkbox allows to reveal or hide the extensions points compartment
+of a usecase",373701,373805,Extension Points This checkbox allows to reveal or hide the extensions points compartment of a usecase.,C
+373818,373885,This defines the corners of the bounding box for a 2D model element,373818,373886,This defines the corners of the bounding box for a 2D model element.,C
+373887,373932,"It comprises four
+numbers separated by commas",373887,373933,It comprises four numbers separated by commas.,C
+373934,374142,"These four numbers are respectively: i) the X coordinate of the upper
+left corner of the box; ii) the Y coordinate of the upper left corner of the box; iii) the width of the
+box; and iv) the height of the box",373934,374143,These four numbers are respectively: i) the X coordinate of the upper left corner of the box; ii) the Y coordinate of the upper left corner of the box; iii) the width of the box; and iv) the height of the box.,C
+374144,374184,All units are pixels on the editing pane,374144,374185,All units are pixels on the editing pane.,C
+374409,374479,This drop-down selector specifies the fill color for 2D model elements,374409,374480,This drop-down selector specifies the fill color for 2D model elements.,C
+374481,374522,"It is not present for
+line model elements",374481,374523,It is not present for line model elements.,C
+374524,374577,Selecting No Fill makes the model element transparant,374524,374578,Selecting No Fill makes the model element transparant.,C
+374648,374697,It causes the color selector dialog box to appear,374648,374713,"It causes the color selector dialog box to appear, see Figure 13.",C
+371320,371420,"Since UML comments are a kind of documentation, they are also shown on this tab, with name and body.",371320,371420,"Since UML comments are a kind of documentation, they are also shown on this tab, with name and body.",NC
+372762,372842,shows a typical style tab for a model element in ArgoUML (in this case a class).,372762,372842,"Style sheets vary a little from model element to model element, but Figure 13.8, "" A typical Presentation tab on the details pane "" shows a typical style tab for a model element in ArgoUML (in this case a class).",NC
+371432,371479,A text box for the author of the documentation.,371432,371479,Author: A text box for the author of the documentation.,NC
+370969,371000,for a model element in ArgoUML.,370969,371000,"Figure 13.7, "" A typical Documentation tab on the details pane "" shows a typical documentation tab for a model element in ArgoUML.",NC
+372264,372390,This tab provides some limited control over the graphical representation of model elements in the diagram in the editing pane.,372264,372390,This tab provides some limited control over the graphical representation of model elements in the diagram in the editing pane.,NC
+372092,372183,"For model elements that require heavy documentation, notably use cases, the use of the See:",372092,372183,"For model elements that require heavy documentation, notably use cases, the use of the See: field to point to external documents is more practical.",NC
+371147,371218,The other fields similarly store their information under tagged values:,371147,371218,"The other fields similarly store their information under tagged values:  author, version, since, deprecated, see.",NC
+372713,372842,A typical Presentation tab on the details pane ” shows a typical style tab for a model element in ArgoUML (in this case a class).,372713,372842,A typical Presentation tab on the details pane shows a typical style tab for a model element in ArgoUML (in this case a class).,NC
+371914,371969,The names of all comments attached to the modelelement.,371914,371969,The names of all comments attached to the modelelement.,NC
+373170,373211,the ArgoUML Main class would be shown as:,373170,373211,It is shown in UML notation with :: seperators. E.g. the ArgoUML Main class would be shown as: org::argouml::application::Main.,NC
+371980,372037,The bodies of all comments attached to this modelelement.,371980,372037,The bodies of all comments attached to this modelelement.,NC
+371553,371614,A text box to show how long the documentation has been valid.,371553,371614,A text box to show how long the documentation has been valid.,NC
+372953,373018,"for a package, but most fields are common to many model elements.",372953,373018,"There may be further fields in some cases, e.g. for a package, but most fields are common to many model elements.",NC
+371015,371146,"A typical Documentation tab on the details pane As you can see, many more fields have been added to the Documentation field alone.",371015,371146,"A typical Documentation tab on the details pane As you can see, many more fields have been added to the Documentation field alone.",NC
+374360,374398,In this case the field is downlighted.,374360,374398,In this case the field is downlighted.,NC
+371702,371762,planned for removal in future versions of the design model).,371702,371762,Deprecated: A check box to indicate whether this model element is deprecated (i.e. planned for removal in future versions of the design model).,NC
+372184,372239,field to point to external documents is more practical.,372184,372239,"For model elements that require heavy documentation, notably use cases, the use of the See: field to point to external documents is more practical.",NC
