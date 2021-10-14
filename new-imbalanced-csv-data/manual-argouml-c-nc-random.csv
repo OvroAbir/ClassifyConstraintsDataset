@@ -1,0 +1,45 @@
+Whole Sentence,Class
+"The Element metaclass defines a tagged value documentation for comment, description or explanation of the element to which it is attached.",C
+"Since this tagged value applies to every model element, it is given its own tab in the details pane, rather than being part of the Tagged Values tab.",C
+A check box to indicate whether this model element is deprecated (i. e. planned for removal in future versions of the design model).,C
+Pointers to documentation outside the system.,C
+Literal text of any documentation.,C
+Model elements that do not have any specific direct graphical representation on the screen (beyond their textual description) do not have style tabs of their own.,C
+Path This checkbox allow to display or hide the path in front of the name of the modelelement.,C
+Attributes This checkbox allows to hide or show the attributes compartment of a class.,C
+Operation This checkbox allows to hide or show the operations compartment of a class or interface.,C
+"Stereotype This checkbox allows to reveal or hide the stereotypes of a package, shown above the name.",C
+Visibility This checkbox allows to hide the visibility of a package.,C
+"The visibility is shown in UML notation as +, -, # or ~.",C
+Extension Points This checkbox allows to reveal or hide the extensions points compartment of a usecase.,C
+This defines the corners of the bounding box for a 2D model element.,C
+It comprises four numbers separated by commas.,C
+These four numbers are respectively: i) the X coordinate of the upper left corner of the box; ii) the Y coordinate of the upper left corner of the box; iii) the width of the box; and iv) the height of the box.,C
+All units are pixels on the editing pane.,C
+This drop-down selector specifies the fill color for 2D model elements.,C
+It is not present for line model elements.,C
+Selecting No Fill makes the model element transparant.,C
+"It causes the color selector dialog box to appear, see Figure 13.",C
+"Since UML comments are a kind of documentation, they are also shown on this tab, with name and body.",NC
+"Style sheets vary a little from model element to model element, but Figure 13.8, "" A typical Presentation tab on the details pane "" shows a typical style tab for a model element in ArgoUML (in this case a class).",NC
+Author: A text box for the author of the documentation.,NC
+"Figure 13.7, "" A typical Documentation tab on the details pane "" shows a typical documentation tab for a model element in ArgoUML.",NC
+This tab provides some limited control over the graphical representation of model elements in the diagram in the editing pane.,NC
+"For model elements that require heavy documentation, notably use cases, the use of the See: field to point to external documents is more practical.",NC
+"The other fields similarly store their information under tagged values:  author, version, since, deprecated, see.",NC
+A typical Presentation tab on the details pane shows a typical style tab for a model element in ArgoUML (in this case a class).,NC
+The names of all comments attached to the modelelement.,NC
+It is shown in UML notation with :: seperators. E.g. the ArgoUML Main class would be shown as: org::argouml::application::Main.,NC
+The bodies of all comments attached to this modelelement.,NC
+A text box to show how long the documentation has been valid.,NC
+"There may be further fields in some cases, e.g. for a package, but most fields are common to many model elements.",NC
+"A typical Documentation tab on the details pane As you can see, many more fields have been added to the Documentation field alone.",NC
+In this case the field is downlighted.,NC
+Deprecated: A check box to indicate whether this model element is deprecated (i.e. planned for removal in future versions of the design model).,NC
+"For model elements that require heavy documentation, notably use cases, the use of the See: field to point to external documents is more practical.",NC
+Body: The bodies of all comments attached to this modelelement.,NC
+Selecting Custom allows to create other colors then the ones listed.,NC
+"The code shown here, may be saved in the indicated files with the aid of the functions in the Generation menu.",NC
+"There may be further fields in some cases, e.g. for a package, but most fields are common to many model elements.",NC
+"As you can see, many more fields have been added to the Documentation field alone.",NC
+Version: A text box for the version of the documentation.,NC

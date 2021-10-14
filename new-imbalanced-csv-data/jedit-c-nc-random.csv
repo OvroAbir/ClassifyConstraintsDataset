@@ -1,0 +1,94 @@
+Whole Sentence,Class
+"The LEFT, RIGHT, UP and DOWN keys move the caret in the respective direction, and the PAGE_UP and PAGE_DOWN keys move the caret up and down one screen-full, respectively.",C
+"When pressed once, the HOME key moves the caret to the first non-whitespace character of the current screen line.",C
+Pressing it a second time moves the caret to the beginning of the current buffer line.,C
+Pressing it a third time moves the caret to the first visible line.,C
+"The END key behaves in a similar manner, going to the last non-whitespace character of the current screen line, the end of the current buffer line, and finally to the last visible line.",C
+"If soft wrap is enabled, a screen line is a section of a newline-delimited buffer line that fits within the wrap margin width.",C
+"C+HOME and C+END move the caret to the beginning and end of the buffer, respectively.",C
+ HOME is bound to Smart Home.,C
+ END is bound to Smart End.,C
+ S+HOME is bound to Select to Smart Home Position.,C
+ S+END is bound to Select to Smart End Position.,C
+ Range Selection Dragging the mouse creates a range selection from where the mouse was pressed to where it was released.,C
+Holding down Shift while clicking a location in the buffer will create a selection from the caret position to the clicked location.,C
+"Holding down Shift in addition to a caret movement key (LEFT, UP, HOME, etc) will extend a selection in the specified direction.",C
+Holding down Shift and Control while clicking a location in the buffer will create a rectangular selection from the caret position to the clicked location.,C
+"In rectangular selection mode, dragging the mouse always creates a rectangular selection, and keyboard commands that would normally create a range selection create a rectangular selection instead.",C
+A status bar indicator is shown when this mode is enabled.,C
+It is possible to select a rectangle with zero width but non-zero height.,C
+Such zero-width selections are shown as a thin vertical line.,C
+"Inserting text into a rectangular selection repeats the text going down as many times as necessary, and shifts the selection to the right.",C
+Rectangular selections can extend beyond the end of a line into a virtual space.,C
+"Furthermore, if keyboard rectangular selection mode is on or if the Control key is being held down, clicking beyond the end of a line will insert the appropriate amount of whitespace in order to position the cursor at the clicked location.",C
+ Multiple Selection Edit>More Selection>Multiple Selection (keyboard shortcut: C+\) turns multiple selection mode on and off.,C
+The status bar indicates if multiple selection mode is active; see the section called “The Status Bar”.,C
+"Line-based commands (such as Shift Indent Left, Shift Indent Right, and Line Comment) operate on each line that contains at least one selection.",C
+ Some older plugins may not support multiple selection at all.,C
+"Edit>More Selection>Select None (shortcut: ESCAPE) deactivates the selection containing the caret, if there is one.",C
+Otherwise it deactivates all active selections.,C
+"Note Deactivating multiple selection mode while multiple blocks of text are selected will leave the selections in place, but you will not be able to add new selections until multiple selection mode is reactivated.",C
+"Keyboard Focus When the cursor disappears, that means the text area no longer has focus, and when you type, your keystrokes are probably going somewhere else, such as a dockable.",C
+"In overwrite mode, which can be toggled by pressing INSERT, one character is deleted from in front of the caret position for every character that is inserted.",C
+"If nothing is selected, they delete the character before or after the caret, respectively.",C
+"If a selection exists, both delete the selection.",C
+"By default, the last 100 edits is retained;  older edits cannot be undone.",C
+Working With Words C+LEFT and C+RIGHT move the caret a word at a time.,C
+Holding down Shift in addition to the above extends the selection a word at a time.,C
+"A single word can be selected by double-clicking with the mouse, or using the Edit>More Selection>Select Word command (shortcut:  C+e w).",C
+A selection that begins and ends on word boundaries can be created by double-clicking and dragging.,C
+"If there is only one completion, it will be inserted into the buffer immediately.",C
+"If multiple completions were found, the longest common prefix is inserted into the buffer, and a popup is shown below the caret position listing the completions.",C
+" Working With Lines An entire line can be selected by triple-clicking with the mouse, or using the Edit>More Selection>Select Line command (shortcut: C+e l). ",C
+A selection that begins and ends on line boundaries can be created by triple-clicking and dragging.,C
+"A relative offset can be used here, if it is prefixed by a + or a - sign. So for example -5 moves the caret up by 5 lines.",C
+Various jEdit commands behave differently with multiple selections.,NC
+"The Home and End keys If you prefer more traditional behavior for the HOME and END keys, you can reassign the respective keyboard shortcuts in the Shortcuts pane of the Utilities>Options;",NC
+see the section called Tabbing and Indentation for details.,NC
+"For example, if some text was inserted, Undo will remove it from the buffer.",NC
+"The default behavior of the C+LEFT, C+RIGHT, C+BACKSPACE and C+DELETE commands is to stop both at the beginning and the end of each word.",NC
+"Commands that filter text (such as Spaces to Tabs, Range Comment, Replace in Selection, and so on) behave as if each block was selected independently, and the command invoked on each in turn.",NC
+Edit>More Selection>Select None (shortcut: ESCAPE) deactivates the selection.,NC
+View - Toggle Full Screen is one example.,NC
+"When inserting text, the TAB and ENTER keys might not behave entirely like you expect because of various indentation features; see the section called “Tabbing and Indentation” for details.",NC
+Inserting text while there is a selection will replace the selection with the inserted text.,NC
+"If you undo too many changes, Edit>Redo (shortcut: C+e C+z) can restore the changes again.",NC
+"Edit>Complete Word (shortcut:  C+b) locates possible completions for the word at the caret, first by looking in the current edit mode's syntax highlighting keyword list, and then in the current buffer for words that begin with the word at the caret.",NC
+"Note Rectangular selections are implemented using character offsets, not absolute screen positions, so they might not behave as you might expect if a proportional-width font is being used or if soft wrap is enabled.",NC
+Setting this option will use all open buffers to search for possible completions.,NC
+"If you undo too many changes, Edit>Redo (shortcut: C+e C+z) can restore the changes again.",NC
+"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",NC
+Range selections are equivalent to selections in most other text editors; they cover text between two points in a buffer.,NC
+Editing Text Selecting Text A selection is a block of text marked for further manipulation.,NC
+"Commands that filter text (such as Spaces to Tabs, Range Comment, Replace in Selection, and so on) behave as if each block was selected independently, and the command invoked on each in turn.",NC
+"Note, this can degrade completion performance if many buffers are open.",NC
+The simplest way to delete text is with the BACKSPACE and DELETE keys.,NC
+section called Working With Lines and the section called Working With Paragraphs.,NC
+"The ENTER key can be bound to one of the following, or indeed any other command or macro:",NC
+Working With Paragraphs.,NC
+see the section called The Shortcuts Panel.,NC
+"Normally, a word is a sequence of alphanumerics, but you can add other characters as part of what jEdit considers to be a 'word', set on a global or mode basis from Global Options - Editing - Extra Word Characters.",NC
+"Edit>Complete Word (shortcut: C+b) locates possible completions for the word at the caret, first by looking in the current edit mode's syntax highlighting keyword list, and then in the current buffer for words that begin with the word at the caret.",NC
+"More complicated operations, such as a search and replace, can also be undone.",NC
+"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",NC
+"Rectangles can be deleted, copied, pasted, and operated on using ordinary editing commands.",NC
+The Shortcuts Panel.,NC
+Setting this option will use all open buffers to search for possible completions.,NC
+"In addition, this behavior can be changed by remapping these keystrokes to alternative actions whose names end with (Eat Whitespace) in the Shortcuts pane of the Utilities>Options dialog box; see the section called “The Shortcuts Pane”.",NC
+"For this reason, a number of jEdit's actions have a side-effect of focusing on the text area as well.",NC
+Editing Text Selecting Text A selection is a block of text marked for further manipulation.,NC
+The text area font can be changed in the Text Area pane of the Utilities> Options dialog box.,NC
+The caret can also be moved using the keyboard.,NC
+"More advanced caret movement is covered in the section called “Working With Words”, the section called “Working With Lines” and the section called “Working With Paragraphs”.",NC
+"Furthermore, several chunks of text can be selected and operated on simultaneously.",NC
+"This can be used to insert a new column between two existing columns, for example.",NC
+Text entered at the keyboard is inserted into the buffer.,NC
+Commands that insert (or paste) text replace each selection with the entire text that is being inserted.,NC
+"To ensure that the keyboard is focused in the textarea, you can always use the mouse and click in it, but a more keyboard-friendly way is preferred when you are just about to start typing anyway.",NC
+Dragging with the Control key held down will create a rectangular selection.,NC
+"C+BACKSPACE and C+DELETE delete the word before or after the caret, respectively.",NC
+Edit>More Selection>Select Line Range (shortcut: C+e C+l) prompts for two line numbers and selects all text between them.,NC
+A selection is a block of text marked for further manipulation.,NC
+The set of possible words can be expanded by enabling the Global Options - Text Area - Complete words from all open buffers option.,NC
+Edit>Undo (shortcut: C+z) reverses the most recent editing command.,NC
+"If you prefer more traditional behavior for the HOME and END keys, you can reassign the respective keyboard shortcuts in the Shortcuts pane of the Utilities>Options; see the section called “The Shortcuts Pane”.",NC

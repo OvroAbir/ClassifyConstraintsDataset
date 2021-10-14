@@ -1,0 +1,150 @@
+Whole Sentence,Class
+SWARM is platform independent (will run on any operating system) but requires a graphical display and a Java Virtual Machine 1.8 or greater.,C
+Minimum screen resolution of 1280 x 960 is also recommended.,C
+"The Data Source Chooser, the top half of the panel, is used to select the source of the waveform or helicorder data.",C
+"The Channel Selector, the bottom half of the panel, is used to select a channel, either the waveform or the helicorder.",C
+"Currently supported data source types for SWARM are Winston Wave Server, Earthworm Wave Server, FDSN WS, and SeekLink Server.",C
+"Connection to Winston requires the IP address or host name of the server, port number, and communication time out in seconds.",C
+"Connection to Earthworm requires the IP address or host name of the server, port number, and communication time out in seconds.",C
+Earthworm data provides raw wave data only.,C
+International Federation of Digital Seismograph Networks (FDSN) provides RESTful web service interfaces for accessing wave data.,C
+"To add an FDSN web service data source, enter in the dataselect and station URL.",C
+SeedLink protocol transmits data packets in 512-byte Mini-SEED records.,C
+"To connect to a SeedLink server enter in the IP address or host name, and the port.",C
+Swarm can open waveform data stored in files through the File -> Open File... menu.,C
+"Supported read formats are SAC, SEED, miniSEED, SEISAN, Matlab-readable text file, and WIN.",C
+"Simply name the files with the SCNL information separated by space or underscore (_), e.g. MLLR_EHE.txt, MEV SHN OP.txt, etc.",C
+The content of Matlab-readable text file is space delimited with the epoch time in milliseconds followed by the value.,C
+"By default, the file open dialog will filter on .config extension but the configuration file can be called anything and located anywhere.",C
+"The first line of the file must contain the time zone, followed by the name for each channel in the files.",C
+If specified time zone is not valid it will default to 'GMT'.,C
+If configuration file is not available or readable it will default to 'UTC'.,C
+Only Integer (3) encoding is supported.,C
+"The status bar at the bottom will display information about the wave when in Wave, Spectra, or Spectrogram view in inset panel.",C
+"Start time in UTC , End time in UTC, Number of samples (duration in seconds), Sample rate, Minimum amplitude (does not account for bias), Maximum amplitude (does not account for bias), RSAM value (does not account for bias).",C
+" Second Line If the panel is in time series view (Wave and Spectrogram), it will display the time on the x-axis that the mouse is hovering over in local and UTC time.",C
+ Y-axis value if in Wave view;,C
+Frequency and Power in Spectra view;,C
+Frequency in Spectrogram view;,C
+"Hovering over an icon will also provide a tooltip indicating the function of the button and the hot keys, if available.",C
+Default is 15 minutes.,C
+Default is 12 hours.,C
+"Default is 'Now', or current time.",C
+"The format for specifying the bottom view time is YYYYMMDD or, if more resolution is needed, YYMMDDHHMMSS.",C
+"Zoom Zoom determines the amount of time, in seconds, on either side of the mouse cursor to zoom.",C
+Show clip will display the data in red when clip threshold is exceeded.,C
+Audible clipping enables audio alarm when clip threshold is exceeded.,C
+Alert frequency sets the frequency of audio alarm in minutes.,C
+The default value is 15.,C
+Auto-scale toggles helicorder auto-scaling on and off.,C
+Clip threshold allow user to set a counts threshold after which the trace will be shown in red.,C
+"There are four wave view types: standard wave view, spectra, spectrogram, and particle motion.",C
+"Options are Wave, Spectra, Spectrogram, or Particle Motion. 5.",C
+"When in Helicorder View, if Duration Magnitude option is enabled (see Options under File menu) users can left click on the wave panel to create two green markers.",C
+"If the wave panel is subsequently copied to the Clipboard, the duration markers become Coda markers for use in Pick Mode.",C
+"Traditional (Z N E), triaxial (A B C), non-traditional orthogonal (1 2 3), and optional component (U V W) orientation codes.",C
+Auto scale will scale the y-axis automatically if selected.,C
+"Manual scale, if selected, will set the y-axis to the user specified Min. Amplitude and Max. Amplitude settings.",C
+"Persistent rescale, if unchecked, will rescale the x and y axis to use the whole screen based on the current max amplitude being displayed.",C
+Remove bias will remove the mean value from the wave if on.,C
+It is enabled by default.,C
+"Use calibrations, if enabled, will use conversion factor information available from the data source to convert the data to real velocity.",C
+"While SWARM will allow the maximum frequency to be set to any positive value greater than the minimum frequency, this value will adjust automatically if it is greater than the Nyquist frequency of the wave being manipulated.",C
+"Log frequency, if checked, will set the frequency axis to log mode.",C
+"Log Power, if checked, will set the power axis to log mode.",C
+"If log power is enabled, the values here should be the log power range (i.e. the x in 10^x). 5.",C
+"While SWARM will allow the maximum frequency to be set to any positive value greater than the minimum frequency, this value will adjust automatically if it is greater than the Nyquist frequency of the wave being manipulated.",C
+"Log Power, if checked, will set the power scale to log mode.",C
+Power range to use if manual scale power is enabled.,C
+This determines the minimum and maximum to use on the color scale if power is scaled manually.,C
+Legal values are between 0 and 95.,C
+Enabled checkbox will turn Butterworth filtering on and off.,C
+Low pass filter removes signal above corner frequency (Max. frequency) setting.,C
+High pass filter removes signals below corner frequency (Min. frequency) setting.,C
+Band pass filter removes signals above Max. frequency or lower than Min. frequency.,C
+"Order slider bar sets the order of the filter as even values between 2 and 8, inclusive.",C
+"Hovering over an icon will also provide a tooltip indicating the function of the button and the hot keys, if available.",C
+"If this fails, or if more control over the appearance of the helicorder is wanted, set the One bar range.",NC
+This will automatically assign WIN to other unknown file types being opened simultaneously.,NC
+Figure 4 Adding new Earthworm data source 3.,NC
+There are two main ways in which the user can interact with the a helicorder view: manipulating the helicorder view itself or zooming in and looking at the underlying waveform.,NC
+"Alternatively, it’s possible to select a channel (or channels, with CTRL- or Shift-click on Windows) and press one of the five buttons at the bottom of the data chooser:",NC
+It can be obtained from https://volcanoes.usgs.gov/software/winston/.,NC
+The plot begins as red at start time and gradually turns to blue at end time.,NC
+The settings can be edited by clicking on the wave view settings icon or pressing the ? Key.,NC
+Swarm will attempt to obtain SCNL information using the filename.,NC
+"The Gulp size setting determines how much past data to retrieve at a time, and Gulp delay determines how much time between past data retrieval.",NC
+See https://docs.oracle.com/cd/B13866 04/webconf.904/b10877/timezone.htm for a list of time zones that can be used.,NC
+The gray number next to each plot indicates the limit of the x and y axis.,NC
+"To apply rescale, press the R key.",NC
+Clicking on the helicorder opens a wave panel for a magnified view of the area highlighted in yellow.,NC
+"To get it back, type CTRL-D or go to the Window menu and select Data Chooser.",NC
+Figure 7 File type selection dialog 3.,NC
+"The new settings are applied on next helicorder update, which may be several seconds.",NC
+"If nothing happens, you can run the application from a command (or DOS) prompt to see if there are any errors that can be used for troubleshooting.",NC
+Any time a wave view is seen in SWARM there are settings associated with that individual view.,NC
+The helicorder below is displaying channel PN7A SHZ AV from AVO Winston data source.,NC
+The panel shaded blue is the selected wave for the purposes of the clipboard toolbar.,NC
+"The first channel will be mapped to IJEN EHZ ID (Station: IJEN, component: EHZ, and network: ID).",NC
+Figure 8 Helicorder view 4.,NC
+"If channel names are not provided it will use channel numbers as names (e.g. 0, 1, 2, etc.)",NC
+Wave views are one of the fundamental data views in SWARM.,NC
+"On Windows, double clicking on swarm console.bat will open the SWARM user interface.",NC
+"In the above example, Tokyo’s time zone will be used when determining the wave times.",NC
+"The less memory and processing speed the computer has, the more likely that SWARM's performance is affected when pulling and analyzing large data sets.",NC
+"In Windows, your unzipped swarm-x.y.z directory will look like this:",NC
+Double clicking on a channel will bring up a helicorder.,NC
+It’s also possible to zoom into any portion of a wave by left clicking and dragging over the portion to zoom in on (the transparent yellow block is showing the act of zooming).,NC
+Figure 6 Adding a new SeedLink data source 3.,NC
+Figure 3 Adding new Winston data source 3.,NC
+Figure 15 Wave Clipboard 6.,NC
+"To apply filter, press the F key.",NC
+"Some wave data, such as those imported from Matlab-readable text files, may not have the required station and channel information to perform this plot.",NC
+"Simply name the files with the SCNL information separated by space or underscore (_), e.g. MLLR_EHE.txt, MEV SHN OP.txt, etc",NC
+It will also use the WIN configuration selected for the first file on all subsequent files.,NC
+"For example, if there is a seismometer that reports counts between -3600 and 3600 and a bar range of 1200 is selected, a full-range waveform will take 3 bars, overlapping one above and one below.",NC
+Figure 13 Spectrogram view 5.,NC
+More information on SeedLink and IRIS DMC’s server can be found at http://ds.iris.edu/ds/nodes/dmc/services/seedlink/. ,NC
+All the settings for the helicorder view can be manipulated in the helicorder view settings dialog which can be opened by clicking on the button.,NC
+Increasing the number of samples increases the vertical resolution while decreasing the horizontal resolution.,NC
+"To remove an existing data source, select the data source to delete and click on 'Remove data source' icon clicking on it and selecting the 'Refresh data source' icon .",NC
+"Since there usually many WIN files associated with a wave, it is advised that the 'Assume all unknown files are of this type' option when prompted for file type selection.",NC
+"This allows users, for example, to compare arrival times across many stations, look at the same waveform with three different filters, or compare different events from one station.",NC
+"It’s possible to adjust the size of the two panels by adjusting the split line in the center, either by dragging with the mouse or clicking on one of the small arrows.",NC
+Winston is a Java-based seismic wave server developed by USGS that provides data and plots to clients.,NC
+"To apply filter, press the F key.",NC
+The Japanese WIN format does not contain station or time zone information.,NC
+"While the station information is not strictly necessary to display the data in helicorder and most other views, it may be required in some cases, such as in the particle motion view.",NC
+This effectively eliminates all drift and is useful for broadband stations with lots of low frequency energy.,NC
+"After starting SWARM, a panel will be visible on the left side of the main screen.",NC
+"To install SWARM, unzip the download swarn-x.",NC
+frequency specifies the x-axis maximum.,NC
+Figure 1 Swarm Directory Contents 2.,NC
+Below are the functions available in the toolbar above the helicorder.,NC
+X is the number of minutes to display along the bottom of the helicorder.,NC
+Y is the total time in hours to display on the helicorder.,NC
+Also available is a button to display the Wave View Settings Dialog.,NC
+Refresh is the number of seconds between attempts to refresh the helicorder with the latest data. ,NC
+Auto-scale toggles helicorder auto-scaling on and off. ,NC
+This is best understood through experimentation.,NC
+"The new settings are applied on next helicorder update, which may be several seconds.",NC
+Due to the large volume of data and complex calculations performed it is recommended to run on SWARM with modern specifications for memory and processing speed.,NC
+IRIS Data Management Center (DMC) hosts a public accessible SeedLink server.,NC
+Maximizing the application window to full screen size will provide the best user experience.,NC
+Matlab-readable text files do not contain station information.,NC
+This information can be provided through a configuration file that Swarm will prompt for when opening WIN files.,NC
+"Abbreviations may work, but it is recommended to use the full time zone name (e.g. Americas/New_York, Atlantic/Reykjavik).",NC
+See section on Wave Views for more information on wave view settings and types.,NC
+One of SWARM’s primary functions is to display helicorders and allow user interactions with it. ,NC
+Figure 4 Adding new Earthworm data source.,NC
+Earthworm is an open-source software system used globally for regional local network seismology.,NC
+"Double clicking on a data source will cause a channel tree to appear, listing the available channels.",NC
+A data server that the user manually added with the ‘New data source’ option.,NC
+A data source can be refreshed by The icon in the upper right lets the user dismiss the whole data source chooser window if  more space is desired.,NC
+SWARM is preconfigured with AVO Winston Wave Server.,NC
+"On Linux or Mac operating systems, you will need to execute swarm.sh from the terminal (command-line).",NC
+The small padlock denotes that it is not possible to edit or delete it from SWARM.,NC
+Refresh is the number of seconds between attempts to refresh the helicorder with the latest data.,NC
+When auto-scaling is on an attempt is made to produce a “pleasant” looking helicorder.,NC
+This is best understood through experimentation.,NC
+Any time a wave view is seen in SWARM there are settings associated with that individual view.,NC
