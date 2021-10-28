@@ -1,0 +1,1 @@
+7z a -ttar -so -an aclImdb | 7z a -si aclImdb.tar.gz
